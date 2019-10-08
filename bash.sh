@@ -8,7 +8,7 @@
 source "$BASH_STUFF/mac-setup/vendor/bash-powerline/bash-powerline.sh"
 
 # set default editor
-export EDITOR=slap
+export EDITOR=/usr/bin/nano
 
 # disables statistics that brew collects
 export HOMEBREW_NO_ANALYTICS=1
