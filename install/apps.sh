@@ -5,53 +5,38 @@ set -e
 # Install/configure apps
 ###############################################################################
 
-echo 'Start installing apps'
+echo 'Start installing core apps'
 
 # get brew cask
 brew tap caskroom/cask
 
-brew cask install docker
-brew cask install visual-studio-code
-brew cask install android-file-transfer
-brew cask install java
-brew cask install filezilla
-brew cask install sourcetree
-brew cask install google-backup-and-sync
-brew cask install dropbox
-brew cask install vlc
-brew cask install google-chrome
-brew cask install firefox
-brew cask install grandtotal
-brew cask install timings
-brew cask install usage
-brew cask install keeweb
-brew cask install postman
-brew cask install sequel-pro
-brew cask install tableplus
-brew cask install skitch
-brew cask install sketch
-brew cask install imageoptim
-brew cask install slack
-brew cask install discord
-brew cask install etcher
-brew cask install spectacle
-brew cask install spotify
-brew cask install free-ruler
-brew cask install the-unarchiver
-brew cask install wkhtmltopdf
-brew cask install virtualbox
-brew cask install virtualbox-extension-pack
-brew cask install wireshark
-brew cask install disk-inventory-x
-brew cask install gas-mask
-brew cask install fontplop
-brew cask install recordit
-brew cask install hyperdock
-brew cask install appcleaner
-brew cask install ccleaner
-brew cask install teamviewer
-brew cask install karabiner-elements
-brew cask install colour-contrast-analyser
+brew cask install vlc # one of the best videpplayers on mac
+brew cask install iina # soon to be best videoplayer on mac
+brew cask install google-chrome #somewhat good browser
+brew cask install firefox # good browser
+brew cask install usage #keep track of time spent in applications
+brew cask install keeweb #cross-platform password manager
+brew cask install postman #Collaboration Platform for API Development
+brew cask install sequel-pro # mysql database manager
+brew cask install tableplus #Modern, native, and friendly GUI tool for relational databases
+brew cask install skitch #screenshot annotations
+brew cask install imageoptim #efficient image optimizer
+brew cask install discord # chat / community software
+brew cask install etcher # Flash OS images to SD cards & USB drives, safely and easily.
+brew cask install the-unarchiver #un-archiving tool
+brew cask install wkhtmltopdf # pdf converter/writer based on webkit
+brew cask install virtualbox #virtualization software
+brew cask install virtualbox-extension-pack #client extensions to virtualbox
+brew cask install wireshark #network protocol analyzer
+brew cask install disk-inventory-x #disk usage utility
+brew cask install gas-mask # Manager for /etc/hosts
+brew cask install fontplop # Fast Open Source Webfont converter
+brew cask install recordit #Fast Screenrecorder
+brew cask install appcleaner #thoroughly uninstall unwanted apps
+brew cask install ccleaner #find and remove junk and unused files
+brew cask install teamviewer #teamviewer, doh!
+# brew cask install karabiner-elements # Keyboard customizer
+brew cask install colour-contrast-analyser #determine the legibility of text and the contrast of visual elements
 
 # quicklook plugins
 brew cask install qlcolorcode
@@ -64,7 +49,7 @@ size
 brew cask install webpquicklook
 
 # install dash with cheatsheets stack overflow and user contributes stuff
-brew cask install dash
+brew cask install dash #API Documentation Browser and Code Snippet Manager
 open "dash-install://repo_name=Cheat Sheets&entry_name=Git"
 open "dash-install://repo_name=Cheat Sheets&entry_name=Docker"
 open "dash-install://repo_name=Cheat Sheets&entry_name=Dockerfile"
@@ -123,17 +108,17 @@ mas install 408981434 # iMovie
 mas install 595191960 # CopyClip
 
 # docker images
-docker pull php:7.1-apache
-docker pull php:7.0-apache
-docker pull php:5.6-apache
-docker pull mysql
-docker pull mariadb
-docker pull postgres
-docker pull mongo
-docker pull redis
+# docker pull php:7.1-apache
+# docker pull php:7.0-apache
+# docker pull php:5.6-apache
+# docker pull mysql
+# docker pull mariadb
+# docker pull postgres
+# docker pull mongo
+# <3 docker pull redis
 
 # prevent creating a backup of the files in the cloud
-sudo tmutil addexclusion -p ~/Google\ Drive
+# sudo tmutil addexclusion -p ~/Google\ Drive
 sudo tmutil addexclusion -p ~/Dropbox
 
 # install also some fonts
@@ -144,10 +129,7 @@ brew cask install font-roboto
 brew cask install font-roboto-condensed
 brew cask install font-raleway
 brew cask install font-oswald
-brew cask install font-noto-sans
-brew cask install font-fontawesome
-brew cask install font-material-icons
-brew cask install font-materialdesignicons-webfont
+
 
 # disable the all too sensitive backswipe on trackpads
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
@@ -158,7 +140,7 @@ defaults write com.google.Chrome AppleEnableMouseSwipeNavigateWithScrolls -bool 
 defaults write com.google.Chrome.canary AppleEnableMouseSwipeNavigateWithScrolls -bool false
 
 # maeke chrome default browser
-open -a 'Google Chrome' --args --make-default-browser
+# open -a 'Google Chrome' --args --make-default-browser
 
 echo 'Finished installing apps'
 tput bel
