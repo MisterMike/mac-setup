@@ -16,7 +16,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew update
 
 # n
-curl -L https://git.io/n-install | bash
+# curl -L https://git.io/n-install | bash
 
 # git
 brew install git
@@ -45,6 +45,7 @@ brew install nmap
 brew install mozjpeg
 brew install ffmpeg --with-chromaprint --with-fdk-aac --with-libass --with-librsvg --with-libsoxr --with-libssh --with-tesseract --with-libvidstab --with-opencore-amr --with-openh264 --with-openjpeg --with-openssl --with-rtmpdump --with-rubberband --with-sdl2 --with-snappy --with-tools --with-webp --with-x265 --with-xz --with-zeromq --with-zimg
 
+vagrant box add laravel/homestead
 
 echo 'Finished installing dev tools'
 tput bel
