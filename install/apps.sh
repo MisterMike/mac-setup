@@ -44,8 +44,7 @@ brew cask install qlstephen
 brew cask install qlmarkdown
 brew cask install quicklook-json
 brew cask install betterzip
-brew cask install ql
-size
+brew cask install qlimagesize
 brew cask install webpquicklook
 
 # install dash with cheatsheets stack overflow and user contributes stuff
