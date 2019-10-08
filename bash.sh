@@ -106,3 +106,9 @@ alias transfer=transfer
         echo "'$1' is not a valid file"
     fi
 }
+
+# access homestead globally
+
+function homestead() {
+    ( cd ~/Homestead && vagrant $* )
+}
